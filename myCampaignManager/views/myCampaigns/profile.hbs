@@ -1,0 +1,13 @@
+<h1>This is {{loggedInUser.firstName}} {{loggedInUser.lastName}}s profile</h1>
+
+<h4><a href="/users/logout">Log Out</a></h4>
+<h2>My campaigns</h2>
+<ul>
+ {{#each myCampaigns}}
+            <li> Name: {{title}} </li>
+            <li>Creator {{userID}}</li>
+            <li>Request of: ${{amt}}</li>
+            <li><a href="/campaigns/view?id={{_id}}">Campaign Link</a></li>
+            <br/>
+            {{/each}}
+</ul>

@@ -1,0 +1,21 @@
+<h1 class="titles"> {{title }}</h1>
+
+<form class="content" method="POST" action="/campaigns/save">
+ 
+    <p>
+        Campaign Title:
+        <input type="text" name='title' placeholder="Your campaign title..." value="" />
+    </p>
+    <p>
+        Campaign Amount:
+        <input type="text" name='amt' placeholder="Your campaign amount" value="" />
+    </p>
+    
+    <br />
+    <h3>A description of your donation campaign</h3>
+    <textarea rows="10" name='desc' cols="50"></textarea>
+    <br />
+
+
+    <input type="submit" value="Submit"></input>
+</form>

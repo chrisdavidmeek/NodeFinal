@@ -1,0 +1,20 @@
+<html>
+  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+  <head> </head>
+  <body>
+    <%- include('partials/nav.ejs'); %>
+    <div class="titles" id="homepage-user-title">
+      <h1>
+        <%= title %>%>
+      </h1>
+    </div>
+    <div class="content" id="homepage-content">
+      <p>Welcome to the home page</p>
+    </div>
+    <ul>
+      <% for(var item of campaignList) {%>
+      <li><%= item.title %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
